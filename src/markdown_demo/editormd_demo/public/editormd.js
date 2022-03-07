@@ -355,6 +355,8 @@
          */
         
         init : function (id, options) {
+            console.warn("id:",id)
+            console.warn("options:",options)
             options              = options || {};
             
             if (typeof id === "object")
@@ -4103,6 +4105,8 @@
      */
     
     editormd.loadCSS   = function(fileName, callback, into) {
+        console.warn("loadCSS_fileName:",fileName)
+        console.warn("loadCSS_into:",into)
         into       = into     || "head";        
         callback   = callback || function() {};
         
@@ -4136,6 +4140,8 @@
      */
 
     editormd.loadScript = function(fileName, callback, into) {
+        console.warn("loadScript_fileName:",fileName)
+        console.warn("loadScript_into:",into)
         into          = into     || "head";
         callback      = callback || function() {};
         
